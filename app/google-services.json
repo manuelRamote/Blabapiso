@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "764735156441",
+    "project_id": "blablapisosddbb",
+    "storage_bucket": "blablapisosddbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764735156441:android:0126a487b2abdb7e74cec8",
+        "android_client_info": {
+          "package_name": "com.cm.blabapiso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764735156441-m7oijkv1qc2n5n2nim1t3beevrhg5b8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeqw6sTMSCxiF3LisHcvQoEkjkjUgl3lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764735156441-m7oijkv1qc2n5n2nim1t3beevrhg5b8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
