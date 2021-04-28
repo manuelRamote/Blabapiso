@@ -58,4 +58,23 @@ public class EmailPasswordActivity extends Activity {
 
                 });
     }
+
+    private void singIn(String email, String password) {
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        //Si se ha accedido correctamente, hay que hacer un update de la UI con el usuario
+                        if (task.isSuccessful()) {
+                            Log.d("EmailPassword", "singInWithEmail:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            updateUI(user);
+                        } else {
+                            Log.w("EmailPassword", "singInWithEmail:Failure", task.getException());
+                            Toast.makeText(EmailPasswordActivity.this, "Autentification Failed.", Toast.LENGTH_SHORT).show();
+                            updateUI(null);
+                        }
+                    }
+                });
+    }
 }
