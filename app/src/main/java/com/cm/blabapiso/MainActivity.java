@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserInfo;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +37,19 @@ public class MainActivity extends AppCompatActivity {
             String uid = user.getUid();
         }
 
+    }
+    public void getProviderData(){
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        if(user != null){
+            for(UserInfo profile : user.getProviderData()){
+                String providerId = profile.getProviderId();
+                String uid = profile.getUid();
+                String name = profile.getDisplayName();
+                String email = profile.getEmail();
+                Uri photoUrl = profile.getPhotoUrl();
+            }
+        }
     }
 
 
