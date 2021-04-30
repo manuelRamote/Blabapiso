@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     }
 
-<<<<<<< HEAD
-=======
     public void checkCurrentUser(){
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -54,9 +52,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
-    //Comentario de prueba
->>>>>>> 9856e7292d1b75c84c23f56c9d7b4d98babb02d7
 
 }
 

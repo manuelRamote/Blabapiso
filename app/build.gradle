@@ -49,10 +49,8 @@ dependencies {
 
     //Para implementar una imagen circular
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-<<<<<<< HEAD
+
 
 }
-=======
-}
 
->>>>>>> 9856e7292d1b75c84c23f56c9d7b4d98babb02d7
+
