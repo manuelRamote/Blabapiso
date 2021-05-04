@@ -4,9 +4,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/logo"
@@ -109,17 +109,22 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="12dp" />
+        android:layout_height="20dp" />
 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
-        android:layout_width="191dp"
+
+    <Button
+        android:id="@+id/btn_signUpwithGoogle"
+        android:layout_width="166dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp">
-
-    </com.google.android.gms.common.SignInButton>
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="15dp"
+        android:drawableLeft="@drawable/ic_google_icon"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="GOOGLE"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp"
+        app:backgroundTint="@color/white" />
 
 </LinearLayout>
