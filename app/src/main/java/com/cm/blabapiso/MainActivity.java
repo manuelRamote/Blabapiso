@@ -2,14 +2,21 @@ package com.cm.blabapiso;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserInfo;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity {
+
+
 
     private static final String TAG= "MainActivity";
     @Override
@@ -27,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             //Completar el tratamiento del usuario
         }
     }
+
 
     public void getUserProfile(){
         FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
