@@ -2,23 +2,34 @@ package com.cm.blabapiso;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserInfo;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity {
+
+
 
     private static final String TAG= "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_firebase_ui);
+        setContentView(R.layout.app_main);
 
        // getActionBar().hide();
     }
+
 
     public void checkCurrentUser(){
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -27,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             //Completar el tratamiento del usuario
         }
     }
+
 
     public void getUserProfile(){
         FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
